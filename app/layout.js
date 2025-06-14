@@ -1,15 +1,17 @@
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
+import NavigationBar from "./components/NavigationBar";
+import { Roboto } from "next/font/google";
+import { Libre_Baskerville } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const librafont = Libre_Baskerville ({
+   weight: '400',
+  subsets:['latin']
+})
+const robotoFont = Roboto({
+  subsets:['latin']
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -19,7 +21,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={librafont.className}>
+      <NavigationBar />
         {children}
       </body>
     </html>
