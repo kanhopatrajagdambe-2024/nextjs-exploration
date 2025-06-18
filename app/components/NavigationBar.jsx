@@ -10,7 +10,7 @@ export default function NavigationBar() {
       Riddhi's Traditional wear 
     </div>
      <nav>
-        <ul className='flex gap-20 p-10'>
+        <ul className='flex gap-10 p-10'>
             <li>
                 <Link href="/">Home</Link>
             </li>
@@ -25,6 +25,12 @@ export default function NavigationBar() {
             </li>
              <li>
                 <Link href="/services">Services</Link>
+            </li>
+            <li>
+                <Link href="/servercomponent">Server Compoent</Link>
+            </li>
+            <li>
+                <Link href="/clientcomponent">Client Component</Link>
             </li>
         </ul>
      </nav>
