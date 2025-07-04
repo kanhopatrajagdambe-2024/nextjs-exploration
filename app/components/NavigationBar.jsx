@@ -18,6 +18,12 @@ export default function NavigationBar() {
                 <Link href="/about">About</Link>
             </li>
              <li>
+                <Link href="/clientcomp">RCC</Link>
+            </li>
+             <li>
+                <Link href="/servercomp">RSC</Link>
+            </li>
+             <li>
                 <Link href="/contact">Contact</Link>
             </li>
             <li>

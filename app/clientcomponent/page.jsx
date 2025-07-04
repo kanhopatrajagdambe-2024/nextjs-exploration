@@ -6,18 +6,14 @@ import Counter from './counter';
 
 export default function ServerComponent() {
     const [postdata, setPostData] = useState(null)
-    
-
     useEffect(()=>{
       const fetchData = async()=>{
      const res = await fetch('https://jsonplaceholder.typicode.com/posts');
       const data = await res.json();
       setPostData(data);
       console.log("data",data)
-
       }
       fetchData()
-
     }, [])
   return (
     <>
@@ -30,9 +26,7 @@ export default function ServerComponent() {
                         </>
                     )
                 })
-
                 }
-
               </div>
               <Counter />
     </>
